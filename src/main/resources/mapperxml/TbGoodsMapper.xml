@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sdz.love.bamboos.mapper.TbGoodsMapper">
+  <resultMap id="BaseResultMap" type="com.sdz.love.bamboos.entity.TbGoods">
+    <!--@mbg.generated-->
+    <!--@Table tb_goods-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="goods_name" jdbcType="VARCHAR" property="goodsName" />
+    <result column="goods_type" jdbcType="VARCHAR" property="goodsType" />
+    <result column="create_by" jdbcType="VARCHAR" property="createBy" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="create_icon" jdbcType="VARCHAR" property="createIcon" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="delete_flag" jdbcType="INTEGER" property="deleteFlag" />
+    <result column="goods_icon" jdbcType="VARCHAR" property="goodsIcon" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="remarks" jdbcType="VARCHAR" property="remarks" />
+    <result column="type" jdbcType="CHAR" property="type" />
+    <result column="time" jdbcType="TIMESTAMP" property="time" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, goods_name, goods_type, create_by, create_time, create_icon, `status`, delete_flag, 
+    goods_icon, user_id, address, remarks, `type`, `time`, phone
+  </sql>
+</mapper>

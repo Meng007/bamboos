@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sdz.love.bamboos.mapper.TbLoveMapper">
+  <resultMap id="BaseResultMap" type="com.sdz.love.bamboos.entity.TbLove">
+    <!--@mbg.generated-->
+    <!--@Table tb_love-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="love_title" jdbcType="VARCHAR" property="loveTitle" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="icons" jdbcType="VARCHAR" property="icons" />
+    <result column="create_by" jdbcType="VARCHAR" property="createBy" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="is_delete" jdbcType="INTEGER" property="isDelete" />
+    <result column="state" jdbcType="INTEGER" property="state" />
+    <result column="create_id" jdbcType="BIGINT" property="createId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, love_title, content, icons, create_by, icon, create_time, is_delete, `state`, 
+    create_id
+  </sql>
+</mapper>

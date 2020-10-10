@@ -1,0 +1,31 @@
+# 系统基本信息
+project:
+  projectName: 小主
+  version: 1.0.0
+  profile: D:/sdz/icon
+  address: 玉林师范学院
+  qq: 774068297
+  copyrightYear: 2021
+  author: 史德竹
+
+
+server:
+  port: 9999
+  servlet:
+    context-path: /
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  profiles:
+    active: dev
+# token配置
+token:
+  # 令牌自定义标识
+  header: Authorization
+  # 令牌秘钥
+  secret: abcdefghijklmnopqrstuvwxyz
+  # 令牌有效期（默认30分钟）
+  expireTime: 30
+
